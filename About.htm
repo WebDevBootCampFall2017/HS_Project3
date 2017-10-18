@@ -84,8 +84,8 @@
 		    from { opacity: 0; }
 		    to   { opacity: 1; }
 		}
-		.title{
-
+		.profolio_title{
+			font-size: 14px;
 		}
 		.badges{
 			height: 80px;
@@ -107,18 +107,18 @@
 		}
 	</style>
 	<script type="text/javascript">
-		function demo(){
-			var x = document.getElementById("more");
-			x.scrollTop=x.scrollHeight;
-		}
-		function darkenTab(){
-			var expP = document.getElementById("experience").position();
-			console.log(expP.top);
-		}
+		function test(){
+			var expPos = document.getElementById("experience");
+			//var position = $(expPos).offset();
+			//if (expPos.offsetTop <= 0){
+			//	console.log("HAHAHAHA");
+			//} 
 
+			console.log("expPos ="+ $(expPos).offest());
+		}
 	</script>
 </head>
-<body onload="darkenTab()">
+<body onload="test()">
 	<header></header>
 	<div id="nav_bg">
 		<nav>
@@ -137,20 +137,25 @@
 			<img id="ProfilePic" src="img\ProfileTrimmed.png">		
 		</div>	
 		<div style="margin-right: 90px; width:100%">
-			<h1 style="font-family: 'PT Sans', sans-serif;">CHIANG, HOU SHENG <img src="img/CHSzh.png" alt="蔣後聖" style="height: 35px;> <img src="img/Taiwan.png" style=" height: 18px; vertical-align: text-middle;"></h1>
+			<h1 style="font-family: 'PT Sans', sans-serif;">CHIANG, HOU SHENG <img src="img/CHSzh.png" alt="蔣後聖" style="height: 35px;"><img src="img/Taiwan.png" style="height: 18px; vertical-align: text-middle;"></h1>
 			<h5 style="line-height: 0px">Apex, North Carolina</h5>
 			<hr>
 			<p>Programmer | Web Developer | Casual Gamer</p>
-			<a href = "https://www.youracclaim.com/badges/eabcc087-974b-4451-834a-255a7182dc92" target="_blank"><img class="badges" alt= "MTA 98-361" src="https://acclaim-production-app.s3.amazonaws.com/images/dd81e911-710a-4657-bbf9-a4d28416257a/MTA%2BSoftware%2BDevelopment%2BFundamentals-01-2.png"></a>
+			<a href = "https://www.youracclaim.com/badges/eabcc087-974b-4451-834a-255a7182dc92" target="_blank"><img class="badges" title= "MTA 98-361" src="https://acclaim-production-app.s3.amazonaws.com/images/dd81e911-710a-4657-bbf9-a4d28416257a/MTA%2BSoftware%2BDevelopment%2BFundamentals-01-2.png"></a>
+			<a href=""><img class="badges" title="MTA 98-375" src="img/MTA98-375.png"></a>
 			<hr>
 			<div style="display: flex; text-align: center;">
 				<div class="preview">
-					<p>Project 3- DaiwanBlog</p>
-					<a href="index.html"><img src="img/DaiwanBlog_Preview.png" style="height: 140px"></a>
+					<p class="profolio_title">Project 1<br>C# Console App</p>
+					<a href=""><img title="Trajectory" src="img/Trajectory.png" style="height: 140px"></a>
 				</div>
 				<div class="preview">
-					<p>Project 3- DaiwanBlog</p>
-					<a href=""><img src="img/DaiwanBlog_Preview.png" style="height: 140px"></a>
+					<p class="profolio_title">Project 2<br>C# Windows Form</p>
+					<a href="index.html"><img src="img/Text_Editor.png" style="height: 140px"></a>
+				</div>
+				<div class="preview">
+					<p class="profolio_title">Project 3<br>HTML/CSS/JS</p>
+					<a href="index.html"><img src="img/DaiwanBlog_Preview.png" style="height: 140px"></a>
 				</div>
 			</div>
 
