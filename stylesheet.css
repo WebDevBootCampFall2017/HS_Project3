@@ -1,0 +1,113 @@
+body{	
+	background-color: grey;
+	background-image: url("https://wallpapertag.com/wallpaper/full/c/4/d/94048-chrome-background-1920x1080-hd-for-mobile.jpg");
+	background-attachment: fixed;
+	font-family: 'Roboto', sans-serif;
+	margin: auto;
+	min-width: 1040px;
+	width: 100%;
+}
+a{
+	color: white;
+	text-decoration: none;
+}
+#Web_Icon{
+	float: left;
+	height: 27px;
+	margin-top: -5px;
+	margin-right: 5px;
+}
+#nav_bg{
+	background: linear-gradient(#1a3300, #264d00, #264d00);
+	top: 0px;
+	position: sticky;
+}
+nav{
+	margin: auto;
+	width: 77%;
+	color: white;
+	font-size: 18px;
+}
+.containers{
+	background-color: rgba(255, 255, 255, 0.6);
+	padding-top: 6vh;
+	height: 78vh;
+	width: 70%;
+	min-width: 940px;
+	margin: auto;
+}
+.nav_tab{
+	display: inline-block;
+	vertical-align: middle;
+	padding: 15px;
+	//margin: 0px 11px 0px 11px;
+}
+.nav_tab:hover{
+	background-color: #4d4d4d;
+}
+#social_tab_container{
+	float: right;
+	padding-top: 14px ;
+}
+.social_tab{
+	float: right;
+}
+.social_icon{
+	margin: 30px 5px 10px 5px;
+	width: 35px;
+	right: 0px;
+	vertical-align: middle;
+}
+dl,ul{
+	line-height: 30px;
+	margin: 0px;
+}
+#Home{
+	display: flex;
+}
+#ProfilePic{
+	width: 270px;
+	margin-top: 21.4px;
+	margin-left: 90px;
+	margin-right: 60px;
+	-webkit-animation: fadein 2.5s;
+}
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+	to   { opacity: 1; }
+}
+#infobox{
+	min-width:460px;
+}
+.project_title{
+	font-size: 14px;
+}
+.badges{
+	height: 80px;
+}
+.preview{
+	display: inline-block;
+	margin: 5px;
+}
+.project_preview{
+	width: 140px;
+}
+}
+.preview>a:hover{
+	opacity: 0.6;
+}
+footer{
+	background: linear-gradient(#264d00, #264d00, black);
+	bottom: 0px;
+	color: white;
+	font-size: 11px;
+	height: 14.5vh;
+	position: fixed;
+	text-align: center;
+	width: 100%;
+}
+@media screen and(max-width: 550px){
+	body{
+		display: none;
+	}
+}
