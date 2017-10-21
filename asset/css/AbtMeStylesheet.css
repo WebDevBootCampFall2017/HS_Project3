@@ -2,6 +2,8 @@ body{
 	background-color: grey;
 	background-image: url("https://wallpapertag.com/wallpaper/full/c/4/d/94048-chrome-background-1920x1080-hd-for-mobile.jpg");
 	background-attachment: fixed;
+	background-size: auto 100vh;
+	background-position: center;
 	font-family: 'Roboto', sans-serif;
 	margin: auto;
 	min-width: 1040px;
