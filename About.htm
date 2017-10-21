@@ -4,117 +4,11 @@
 	<title>About Me - Hou Sheng Chiang</title>
 	<meta charset="UTF-8">
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans:700|Roboto" rel="stylesheet">
-	<link rel="icon" href="img\DaiwanBeeru.png">
-	<style type="text/css">
-		body{	
-			margin: auto;
-			width: 100%;
-			min-width: 1040px;
-			font-family: 'Roboto', sans-serif;
-			background-color: grey;
-			background-image: url("https://wallpapertag.com/wallpaper/full/c/4/d/94048-chrome-background-1920x1080-hd-for-mobile.jpg");
-			background-attachment: fixed;
-
-		}
-		a{
-			color: white;
-			text-decoration: none;
-		}
-		#Web_Icon{
-			float: left;
-			height: 27px;
-			margin-top: -5px;
-			margin-right: 5px;
-		}
-		#nav_bg{
-			background: linear-gradient(#1a3300, #264d00, #264d00);
-			top: 0px;
-			position: sticky;
-		}
-		nav{
-			margin: auto;
-			width: 77%;
-			color: white;
-			font-size: 18px;
-		}
-		.containers{
-			background-color: rgba(255, 255, 255, 0.6);
-			padding-top: 10vh;
-			height: 75vh;
-			width: 70%;
-			min-width: 440px;
-			//max-width: 1000px;
-			margin: auto;
-		}
-		.nav_tab{
-			display: inline-block;
-			vertical-align: middle;
-			padding: 15px;
-			//margin: 0px 11px 0px 11px;
-		}
-		.nav_tab:hover{
-			background-color: #4d4d4d;
-		}
-		#social_tab_container{
-			float: right;
-			padding-top: 14px ;
-		}
-		.social_tab{
-			float: right;
-		}
-		.social_icon{
-			margin: 30px 5px 10px 5px;
-			height: 35px;
-			right: 0px;
-		}
-		dl,ul{
-			line-height: 30px;
-		}
-		#Home{
-			display: flex;
-		}
-		#ProfilePic{
-			float: left;
-			width: 270px;
-			margin-left: 90px;
-			margin-right: 60px;
-			-webkit-animation: fadein 2.5s;
-		}
-		@-webkit-keyframes fadein {
-		    from { opacity: 0; }
-		    to   { opacity: 1; }
-		}
-		.profolio_title{
-			font-size: 14px;
-		}
-		.badges{
-			height: 80px;
-		}
-		.preview{
-			margin: 5px;
-		}
-		.preview>a:hover{
-			opacity: 0.6;
-		}
-		footer{
-			background: linear-gradient(#264d00, #264d00, black);
-			color: white;
-			width: 100vw;
-			height: 18.5vh;
-			position: fixed;
-			bottom: 0px;
-			text-align: center;
-		}
-	</style>
+	<link rel="icon" href="img/DaiwanBeeru.png">
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
 	<script type="text/javascript">
 		function test(){
-			var expPos = document.getElementById("experience");
-			//var position = $(expPos).offset();
-			//if (expPos.offsetTop <= 0){
-			//	console.log("HAHAHAHA");
-			//} 
-
-			console.log("expPos ="+ $(expPos).offest());
+			
 		}
 	</script>
 </head>
@@ -122,42 +16,38 @@
 	<header></header>
 	<div id="nav_bg">
 		<nav>
-			<span>
-				<a href="About.htm" alt="About Me"><div class="nav_tab"> <img id="Web_Icon" src="img\DaiwanBeeru.png">HOU SHENG CHIANG</div></a>
-				<a href="#experience"><div class="nav_tab">Experience</div></a>
-				<a href="#educations"><div class="nav_tab">Educations</div></a>
-				<a href="#skills"><div class="nav_tab">Skills</div></a>
-				<a href="#interests"><div class="nav_tab">Interest</div></a>
-				<a onclick="demo()"><div class="nav_tab"> More...</div></a>
-			</span>
+			<a href="" class="nav_tab"><img id="Web_Icon" alt="DaiwanBeeru" src="img/DaiwanBeeru.png">HOU SHENG CHIANG</a>
+			<a href="#experience" class="nav_tab">Experience</a>
+			<a href="#educations" class="nav_tab">Educations</a>
+			<a href="#skills" class="nav_tab">Skills</a>
+			<a href="#interests" class="nav_tab">Interest</a>
+			<a href="#more" class="nav_tab"> More...</a>
 		</nav>
 	</div>
 	<div id="Home" class="containers">
 		<div>
-			<img id="ProfilePic" src="img\ProfileTrimmed.png">		
-		</div>	
-		<div style="margin-right: 90px; width:100%">
-			<h1 style="font-family: 'PT Sans', sans-serif;">CHIANG, HOU SHENG <img src="img/CHSzh.png" alt="蔣後聖" style="height: 35px;"><img src="img/Taiwan.png" style="height: 18px; vertical-align: text-middle;"></h1>
+			<img class="Home_container" id="ProfilePic" alt="Profile Picture" src="img/ProfileTrimmed.png">
+		</div>
+		<div class="Home_container" id="infobox" >
+			<h1 style="font-family: 'PT Sans', sans-serif;">CHIANG, HOU SHENG <img src="img/CHSzh.png" alt="蔣後聖" style="height: 35px;"><img src="img/Taiwan.png" alt="Taiwan Flag" style="height: 18px; vertical-align: text-middle;"></h1>
 			<h5 style="line-height: 0px">Apex, North Carolina</h5>
 			<hr>
 			<p>Programmer | Web Developer | Casual Gamer</p>
-			<a href = "https://www.youracclaim.com/badges/eabcc087-974b-4451-834a-255a7182dc92" target="_blank"><img class="badges" title= "MTA 98-361" src="https://acclaim-production-app.s3.amazonaws.com/images/dd81e911-710a-4657-bbf9-a4d28416257a/MTA%2BSoftware%2BDevelopment%2BFundamentals-01-2.png"></a>
-			<a href=""><img class="badges" title="MTA 98-375" src="img/MTA98-375.png"></a>
+			<a href="https://www.youracclaim.com/badges/eabcc087-974b-4451-834a-255a7182dc92" target="_blank"><img class="badges" alt="MTA 98-361" title="MTA 98-361" src="https://acclaim-production-app.s3.amazonaws.com/images/dd81e911-710a-4657-bbf9-a4d28416257a/MTA%2BSoftware%2BDevelopment%2BFundamentals-01-2.png"></a>
+			<a href="https://www.youracclaim.com/badges/344831d8-e39c-4553-965b-808649ff4d78" target="_blank"><img class="badges" alt="MTA 98-375" title="MTA 98-375" src="https://acclaim-production-app.s3.amazonaws.com/images/3e7d7490-cb15-48a9-a238-963b078b2992/MTA%2BHTML5%2BApplication%2BDevelopment%2BFundamentals%2B2017-01.png"></a>
 			<hr>
-			<div style="display: flex; text-align: center;">
 				<div class="preview">
-					<p class="profolio_title">Project 1<br>C# Console App</p>
-					<a href=""><img title="Trajectory" src="img/Trajectory.png" style="height: 140px"></a>
+					<p class="project_title">Project 1<br>C# Console App</p>
+					<a href=""><img class="project_preview" alt="Trajectory" src="img/Trajectory.png" title="Trajectory" ></a>
 				</div>
 				<div class="preview">
-					<p class="profolio_title">Project 2<br>C# Windows Form</p>
-					<a href="index.html"><img src="img/Text_Editor.png" style="height: 140px"></a>
+					<p class="project_title">Project 2<br>C# Windows Form</p>
+					<a href=""><img class="project_preview" alt="Text_Editor" src="img/Text_Editor.png" title="Text Editor"></a>
 				</div>
 				<div class="preview">
-					<p class="profolio_title">Project 3<br>HTML/CSS/JS</p>
-					<a href="index.html"><img src="img/DaiwanBlog_Preview.png" style="height: 140px"></a>
+					<p class="project_title">Project 3<br>HTML/CSS/JS</p>
+					<a href="index.html"><img class="project_preview" alt="DaiwanBlog" src="img/DaiwanBlog_Preview.png" title="DaiwanBlog"></a>
 				</div>
-			</div>
 
 		</div>
 	</div>
@@ -167,20 +57,24 @@
 		<dl>
 			<dt><strong>Rehab Tech</strong>, <i>2016</i></dt>
 			<dd><i>&ndash; The Pavilion at Queens Rehabilitation and Nursing- Queens, NY</i>
-				<li>Organize rehabilitation equiptments, including setting up for patients.</li>
-				<li>Bring patients from their room to rehab center.</li>
+				<ul>
+					<li>Organize rehabilitation equiptments, including setting up for patients.</li>
+					<li>Bring patients from their room to rehab center.</li>
+				</ul>
 			</dd>
-			<br>
 			<dt><strong>Store Manager</strong>, <i>2012, 2014-2016</i></dt>
 			<dd><i>&ndash; Black Horse Gift Shop- Queens, NY</i>
-				<li>Interview and train new employees</li>
-				<li>Manage and order inventory from manufacturers.</li>
+				<ul>
+					<li>Interview and train new employees</li>
+					<li>Manage and order inventory from manufacturers.</li>
+				</ul>
 			</dd>
-			<br>
 			<dt><strong>Psychological Counselor, Private</strong>, <i>2013</i></dt>
 			<dd><i>&ndash; Republic of China Army - Taiwan (R.O.C.)</i>
-				<li>Schedule and meet recruits with counseling needs.</li>
-				<li>Filter out recruits who is not qualified for advanced combat trainning. </li>
+				<ul>
+					<li>Schedule and meet recruits with counseling needs.</li>
+					<li>Filter out recruits who is not qualified for advanced combat trainning. </li>
+				</ul>
 			</dd>
 		</dl>
 	</div>
@@ -217,9 +111,9 @@
 	</div>
 	<footer>
 		<div>
-			<a href="mailto:houshengchiang@gmail.com"><img class="social_icon" src="img/gmail_Icon.png"></a>
+			<a href="mailto:houshengchiang@gmail.com"><img alt="gmail_Icon" class="social_icon" src="img/gmail_Icon.png"></a>
 
-			<a href="http://www.linkedin.com/in/hou-sheng-chiang-44a88666"><img class="social_icon" src="img\Linkedin_Icon.png"></a>
+			<a href="http://www.linkedin.com/in/hou-sheng-chiang-44a88666"><img alt="Linkedin_Icon" class="social_icon" src="img/Linkedin_Icon.png"></a>
 		</div>
 		&copy; 2017 Hou Sheng Chiang. All rights reserved.
 	</footer>
