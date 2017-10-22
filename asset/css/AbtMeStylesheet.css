@@ -36,7 +36,7 @@ nav{
 	background-color: rgba(255, 255, 255, 0.6);
 	padding-top: 6vh;
 	height: 78vh;
-	width: 70%;
+	width: 850px;
 	min-width: 940px;
 	margin: auto;
 }
@@ -53,11 +53,8 @@ nav{
 	float: right;
 	padding-top: 14px ;
 }
-.social_tab{
-	float: right;
-}
 .social_icon{
-	margin: 30px 5px 10px 5px;
+	margin: 3vh 5px 10px 5px;
 	width: 35px;
 	right: 0px;
 	vertical-align: middle;
@@ -68,6 +65,7 @@ dl,ul{
 }
 #Home{
 	display: flex;
+	margin: auto;
 }
 #ProfilePic{
 	width: 270px;
