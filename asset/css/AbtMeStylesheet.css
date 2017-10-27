@@ -25,6 +25,7 @@ a{
 	top: 0px;
 	position: sticky;
 	position: -webkit-sticky;
+	z-index: 100;
 }
 nav{
 	margin: auto;
@@ -34,20 +35,22 @@ nav{
 }
 .containers{
 	background-color: rgba(255, 255, 255, 0.6);
-	padding-top: 6vh;
 	height: 78vh;
 	width: 850px;
 	min-width: 940px;
 	margin: auto;
+	padding-top: 6vh;
 }
 .nav_tab{
 	display: inline-block;
-	vertical-align: middle;
 	padding: 15px;
-	//margin: 0px 11px 0px 11px;
+	vertical-align: middle;
 }
 .nav_tab:hover{
 	background-color: #4d4d4d;
+}
+.project_preview:hover{
+	opacity: 0.6;
 }
 #social_tab_container{
 	float: right;
@@ -73,6 +76,7 @@ dl,ul{
 	margin-left: 90px;
 	margin-right: 60px;
 	-webkit-animation: fadein 2.5s;
+	z-index: 50;
 }
 @-webkit-keyframes fadein {
     from { opacity: 0; }
@@ -94,10 +98,6 @@ dl,ul{
 .project_preview{
 	width: 140px;
 }
-}
-.preview>a:hover{
-	opacity: 0.6;
-}
 footer{
 	background: linear-gradient(#264d00, #264d00, black);
 	bottom: 0px;
@@ -108,8 +108,16 @@ footer{
 	text-align: center;
 	width: 100%;
 }
-@media screen and(max-width: 550px){
+/* testing below */
+@media only screen 
+and (max-width : 667px) {
+	#Home{
+		display: unset;
+	}
 	body{
+		background-image: none;
+	}
+	nav{
 		display: none;
 	}
 }
